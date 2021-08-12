@@ -1,0 +1,758 @@
+{
+  "LENGTH_OF_STAY": [
+    {
+      "MAPPING_TYPE": "Field.LENGTH_OF_STAY"
+    }
+  ],
+  "IS_MAJOR": [
+    {
+      "MAPPING_TYPE": "Field.BINARY"
+    }
+  ],
+  "AGE_ON_ADMISSION": [
+    {
+      "MAPPING_TYPE": "Field.AGE_CATEGORISE"
+    }
+  ],
+  "ETHNIC_CATEGORY_CODE_DESCRIPTION": [
+    {
+      "MAPPING_TYPE": "Field.CATEGORISE"
+    },
+    {
+      "null": -1,
+      "african": 1,
+      "any other asian background": 2,
+      "any other black background": 3,
+      "any other ethnic group": 4,
+      "any other mixed background": 5,
+      "any other white background": 6,
+      "bangladeshi": 7,
+      "british": 8,
+      "caribbean": 9,
+      "chinese": 10,
+      "indian": 11,
+      "irish": 12,
+      "not known": 13,
+      "not stated": 14,
+      "pakistani": 15,
+      "white and asian": 16,
+      "white and black african": 17,
+      "white and black caribbean": 18
+    }
+  ],
+  "DIVISION_NAME_AT_ADMISSION": [
+    {
+      "MAPPING_TYPE": "Field.CATEGORISE"
+    },
+    {
+      "null": -1,
+      "diagnostic & specialist": 1,
+      "medical": 2,
+      "surgical": 3,
+      "unknown": 4,
+      "women & children": 5
+    }
+  ],
+  "MAIN_SPECIALTY_CODE_AT_ADMISSION": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "TREATMENT_FUNCTION_CODE_AT_ADMISSION": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "ELECTIVE_OR_NON_ELECTIVE": [
+    {
+      "MAPPING_TYPE": "Field.CATEGORISE"
+    },
+    {
+      "non-elective admission": 0,
+      "elective admission": 1
+    }
+  ],
+  "STROKE_WARD_STAY": [
+    {
+      "MAPPING_TYPE": "Field.BINARY"
+    }
+  ],
+  "IS_CARE_HOME_ON_ADMISSION": [
+    {
+      "MAPPING_TYPE": "Field.BINARY"
+    }
+  ],
+  "AE_ARRIVAL_MODE": [
+    {
+      "MAPPING_TYPE": "Field.CATEGORISE"
+    },
+    {
+      "null": -1,
+      "air ambulance": 1,
+      "ambulance": 2,
+      "bicycle": 3,
+      "car": 4,
+      "friend / relative drop off": 5,
+      "other": 6,
+      "police": 7,
+      "public transport": 8,
+      "taxi": 9,
+      "walked": 10,
+      "works transport": 11
+    }
+  ],
+  "AE_ATTENDANCE_CATEGORY_CODE": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "ALL_INVESTIGATION_CODES": [
+    {
+      "MAPPING_TYPE": "Field.CODE_LIST"
+    },
+    [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "10",
+      "11",
+      "12",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "24",
+      "99"
+    ]
+  ],
+  "ALL_DIAGNOSIS_CODES": [
+    {
+      "MAPPING_TYPE": "Field.TOP_FREQUENCY_COUNT"
+    },
+    [
+      "01",
+      "018",
+      "01b",
+      "01l",
+      "01r",
+      "02",
+      "021",
+      "022",
+      "028",
+      "02b",
+      "02l",
+      "02r",
+      "03",
+      "038",
+      "03b",
+      "03l",
+      "03r",
+      "04",
+      "041",
+      "042",
+      "048",
+      "04b",
+      "04l",
+      "04r",
+      "05",
+      "051",
+      "052",
+      "053",
+      "055",
+      "058",
+      "05b",
+      "05l",
+      "05r",
+      "06",
+      "068",
+      "06b",
+      "06l",
+      "06r",
+      "07",
+      "078",
+      "07b",
+      "07l",
+      "07r",
+      "08",
+      "088",
+      "08b",
+      "08l",
+      "08r",
+      "09",
+      "098",
+      "09b",
+      "09l",
+      "09r",
+      "10",
+      "101",
+      "102",
+      "103",
+      "108",
+      "10b",
+      "10l",
+      "10r",
+      "11",
+      "11b",
+      "11l",
+      "11r",
+      "12",
+      "128",
+      "12b",
+      "12l",
+      "12r",
+      "13",
+      "138",
+      "13b",
+      "13l",
+      "13r",
+      "14",
+      "141",
+      "142",
+      "143",
+      "144",
+      "148",
+      "14b",
+      "14l",
+      "14r",
+      "15",
+      "158",
+      "15b",
+      "15l",
+      "15r",
+      "16",
+      "168",
+      "16b",
+      "16l",
+      "16r",
+      "17",
+      "171",
+      "172",
+      "178",
+      "17b",
+      "17l",
+      "17r",
+      "18",
+      "188",
+      "18b",
+      "18l",
+      "18r",
+      "19",
+      "198",
+      "19b",
+      "19l",
+      "19r",
+      "20",
+      "201",
+      "202",
+      "208",
+      "20b",
+      "20l",
+      "20r",
+      "21",
+      "218",
+      "21b",
+      "21l",
+      "21r",
+      "22",
+      "228",
+      "22b",
+      "22l",
+      "22r",
+      "23",
+      "238",
+      "23b",
+      "23l",
+      "23r",
+      "24",
+      "241",
+      "242",
+      "248",
+      "24b",
+      "24l",
+      "24r",
+      "25",
+      "251",
+      "252",
+      "258",
+      "25b",
+      "25l",
+      "25r",
+      "26",
+      "261",
+      "262",
+      "263",
+      "268",
+      "26b",
+      "26l",
+      "26r",
+      "27",
+      "278",
+      "27b",
+      "27l",
+      "27r",
+      "28",
+      "288",
+      "28b",
+      "28l",
+      "28r",
+      "29",
+      "298",
+      "29b",
+      "29l",
+      "29r",
+      "30",
+      "301",
+      "302",
+      "308",
+      "30b",
+      "30l",
+      "30r",
+      "31",
+      "318",
+      "31b",
+      "31l",
+      "31r",
+      "32",
+      "328",
+      "32b",
+      "32l",
+      "32r",
+      "33",
+      "338",
+      "33b",
+      "33l",
+      "33r",
+      "34",
+      "348",
+      "34b",
+      "34l",
+      "34r",
+      "35",
+      "358",
+      "35b",
+      "35l",
+      "35r",
+      "36",
+      "368",
+      "36b",
+      "36l",
+      "36r",
+      "37",
+      "38",
+      "39",
+      "99",
+      "998",
+      "99b",
+      "99l",
+      "99r"
+    ],
+    {
+      "N_TOP_0_TO_10": [
+        "998",
+        "38",
+        "252",
+        "228",
+        "99",
+        "202",
+        "22",
+        "248",
+        "263",
+        "24"
+      ],
+      "N_TOP_11_TO_20": [
+        "053",
+        "27",
+        "201",
+        "242",
+        "262",
+        "21",
+        "19",
+        "028",
+        "03",
+        "01"
+      ],
+      "N_TOP_21_TO_30": [
+        "02",
+        "042",
+        "24r",
+        "261",
+        "22b",
+        "018",
+        "22l",
+        "144",
+        "35",
+        "28r"
+      ],
+      "N_TOP_31_TO_40": [
+        "28l",
+        "36",
+        "18",
+        "22r",
+        "301",
+        "368",
+        "142",
+        "24l",
+        "34",
+        "251"
+      ],
+      "N_TOP_41_TO_50": [
+        "32l",
+        "24b",
+        "141",
+        "32r",
+        "172",
+        "258",
+        "29",
+        "021",
+        "07",
+        "25"
+      ],
+      "N_TOP_51_TO_60": [
+        "39",
+        "06",
+        "37",
+        "23",
+        "28",
+        "051",
+        "31r",
+        "32",
+        "31l",
+        "241"
+      ],
+      "N_TOP_61_TO_70": [
+        "218",
+        "08",
+        "02r",
+        "02l",
+        "33r",
+        "33l",
+        "32b",
+        "10r",
+        "31",
+        "02b"
+      ],
+      "N_TOP_71_TO_80": [
+        "15l",
+        "12",
+        "10l",
+        "34l",
+        "34r",
+        "30l",
+        "052",
+        "01l",
+        "01r",
+        "30r"
+      ],
+      "N_TOP_81_TO_90": [
+        "01b",
+        "33",
+        "088",
+        "16r",
+        "21r",
+        "198",
+        "041",
+        "12l",
+        "21l",
+        "15r"
+      ],
+      "N_TOP_91_TO_100": [
+        "143",
+        "208",
+        "12r",
+        "16l",
+        "098",
+        "278",
+        "25r",
+        "25l",
+        "05",
+        "13r"
+      ]
+    }
+  ],
+  "IS_CANCER": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "IS_CHRONIC_KIDNEY_DISEASE": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "IS_COPD": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "IS_CORONARY_HEART_DISEASE": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "IS_DEMENTIA": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "IS_DIABETES": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "IS_FRAILTY_PROXY": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "IS_HYPERTENSION": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "IS_MENTAL_HEALTH": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "RURAL_URBAN_CLASSIFICATION": [
+    {
+      "MAPPING_TYPE": "Field.CATEGORISE"
+    },
+    {
+      "null": -1,
+      "rural hamlets and isolated dwellings": 1,
+      "rural town and fringe": 2,
+      "rural village": 3,
+      "urban city and town": 4
+    }
+  ],
+  "OAC_GROUP_NAME": [
+    {
+      "MAPPING_TYPE": "Field.CATEGORISE"
+    },
+    {
+      "null": -1,
+      "ageing city dwellers": 1,
+      "ageing rural dwellers": 2,
+      "ageing urban living": 3,
+      "asian traits": 4,
+      "aspiring and affluent": 5,
+      "challenged asian terraces": 6,
+      "challenged diversity": 7,
+      "challenged terraced workers": 8,
+      "comfortable cosmopolitans": 9,
+      "constrained flat dwellers": 10,
+      "ethnic family life": 11,
+      "farming communities": 12,
+      "hard-pressed ageing workers": 13,
+      "industrious communities": 14,
+      "migration and churn": 15,
+      "rented family living": 16,
+      "rural tenants": 17,
+      "semi-detached suburbia": 18,
+      "students around campus": 19,
+      "suburban achievers": 20,
+      "urban professionals and families": 21,
+      "white communities": 22
+    }
+  ],
+  "EMCOUNTLAST12M": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "EL_COUNTLAST12M": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "ED_COUNTLAST12M": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "OP_FIRST_COUNTLAST12M": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "OP_FU_COUNTLAST12M": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "AE_INITIAL_ASSESSMENT_TRIAGE_CATEGORY_CODE": [
+    {
+      "MAPPING_TYPE": "Field.COPY"
+    }
+  ],
+  "ARRIVAL_DAY_OF_WEEK": [
+    {
+      "MAPPING_TYPE": "Field.CATEGORISE"
+    },
+    {
+      "null": -1,
+      "mon": 1,
+      "tue": 2,
+      "wed": 3,
+      "thu": 4,
+      "fri": 5,
+      "sat": 6,
+      "sun": 7
+    }
+  ],
+  "ARRIVAL_MONTH_NAME": [
+    {
+      "MAPPING_TYPE": "Field.CATEGORISE"
+    },
+    {
+      "null": -1,
+      "jan": 1,
+      "feb": 2,
+      "mar": 3,
+      "apr": 4,
+      "may": 5,
+      "jun": 6,
+      "jul": 7,
+      "aug": 8,
+      "sep": 9,
+      "oct": 10,
+      "nov": 11,
+      "dec": 12
+    }
+  ],
+  "ILLNESS_INJURY_FLAG": [
+    {
+      "MAPPING_TYPE": "Field.CATEGORISE"
+    },
+    {
+      "null": -1,
+      "illness": 1,
+      "injury": 2
+    }
+  ],
+  "MANCHESTER_TRIAGE_CATEGORY": [
+    {
+      "MAPPING_TYPE": "Field.CATEGORISE"
+    },
+    {
+      "null": -1,
+      "minor": 1,
+      "major": 2
+    }
+  ],
+  "MENTAL_HEALTH_FLAG": [
+    {
+      "MAPPING_TYPE": "Field.CATEGORISE"
+    },
+    {
+      "null": -1,
+      "mental_health": 1,
+      "other": 2
+    }
+  ],
+  "PRESENTING_COMPLAINT_GROUP": [
+    {
+      "MAPPING_TYPE": "Field.CATEGORISE"
+    },
+    {
+      "null": -1,
+      "abdo": 1,
+      "abscess": 2,
+      "alcohol": 3,
+      "allergic reaction": 4,
+      "aneamic": 5,
+      "appendicitis": 6,
+      "asthma": 7,
+      "back": 8,
+      "bite/ sting": 9,
+      "bleeding": 10,
+      "breathing diffuculties": 11,
+      "burn/scald": 12,
+      "cardiac problem": 13,
+      "catheter": 14,
+      "cauda equina": 15,
+      "cellulitis": 16,
+      "choking": 17,
+      "collapse/faint": 18,
+      "concussion": 19,
+      "confusion": 20,
+      "constipation": 21,
+      "convulsions": 22,
+      "copd": 23,
+      "cough": 24,
+      "d&v": 25,
+      "dehydration": 26,
+      "dental": 27,
+      "dermatology problem": 28,
+      "diabetic": 29,
+      "dislocation": 30,
+      "dizzy": 31,
+      "dressings/bandages/stitches": 32,
+      "dvt": 33,
+      "electric shock": 34,
+      "ent problem": 35,
+      "fall": 36,
+      "fit/seizure": 37,
+      "flu/influenza": 38,
+      "foreign body": 39,
+      "gastro": 40,
+      "gynae/obs": 41,
+      "haem": 42,
+      "head inj": 43,
+      "hernia": 44,
+      "high temp/fever": 45,
+      "homeless/social": 46,
+      "hyper/hypo glycaemic": 47,
+      "infection": 48,
+      "inflammation": 49,
+      "ingestion": 50,
+      "inhalation": 51,
+      "injury/trauma/wound": 52,
+      "jaundice": 53,
+      "liver": 54,
+      "max fax": 55,
+      "melaena": 56,
+      "mental health related": 57,
+      "neck/spinal": 58,
+      "not categorisable": 59,
+      "numbness": 60,
+      "obstruction/blockage": 61,
+      "off legs": 62,
+      "pancreatitis": 63,
+      "pe": 64,
+      "personal problem": 65,
+      "plaster/ cast problem": 66,
+      "pneumonia": 67,
+      "poisoning": 68,
+      "post op problem": 69,
+      "pyrexia": 70,
+      "reduced mobility": 71,
+      "renal/kidney": 72,
+      "respiratory": 73,
+      "return visit/request": 74,
+      "rta/rtc": 75,
+      "sepsis": 76,
+      "sickle cell": 77,
+      "sob": 78,
+      "stroke/tia": 79,
+      "swallowed fb": 80,
+      "swelling": 81,
+      "ulcer": 82,
+      "unconscious/unresponsive": 83,
+      "unwell": 84,
+      "urology": 85,
+      "uti": 86,
+      "vision/ eye problem": 87
+    }
+  ]
+}

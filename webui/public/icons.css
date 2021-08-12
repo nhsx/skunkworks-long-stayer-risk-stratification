@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'nhs';
+  src:
+    url('icons/nhs.ttf?rhg3gz') format('truetype'),
+    url('icons/nhs.woff?rhg3gz') format('woff'),
+    url('icons/nhs.svg?rhg3gz#nhs') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'nhs' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e90f";
+  color: #005eb8;
+}
+.icon-home:before {
+  content: "\e90e";
+  color: #005eb8;
+}
+.icon-document-download:before {
+  content: "\e900";
+  color: #005eb8;
+}
+.icon-document-issue:before {
+  content: "\e901";
+  color: #005eb8;
+}
+.icon-documents:before {
+  content: "\e902";
+  color: #005eb8;
+}
+.icon-bar-chart:before {
+  content: "\e903";
+  color: #005eb8;
+}
+.icon-bold-full-bar-chart:before {
+  content: "\e904";
+  color: #005eb8;
+}
+.icon-dial:before {
+  content: "\e905";
+  color: #005eb8;
+}
+.icon-document-success:before {
+  content: "\e906";
+  color: #005eb8;
+}
+.icon-download-cloud:before {
+  content: "\e907";
+  color: #005eb8;
+}
+.icon-menu:before {
+  content: "\e908";
+  color: #005eb8;
+}
+.icon-person:before {
+  content: "\e909";
+  color: #005eb8;
+}
+.icon-tick-circle:before {
+  content: "\e90a";
+  color: #005eb8;
+}
+.icon-upload-cloud:before {
+  content: "\e90b";
+  color: #005eb8;
+}
+.icon-warning:before {
+  content: "\e90c";
+  color: #005eb8;
+}
+.icon-csv-file:before {
+  content: "\e90d";
+  color: #005eb8;
+}
