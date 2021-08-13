@@ -1,10 +1,10 @@
 ![Banner](docs/banner.png)
 
-# NHSX AI Lab Skunkworks project: Long Stayer Risk Stratification
+# NHS AI Lab Skunkworks project: Long Stayer Risk Stratification
 
-> A pilot project for the NHSX AI Lab Skunkworks team, Long Stayer Risk Stratification uses historical data from Gloucestershire Hospitals NHS Foundation Trust to predict how long a patient will stay in hospital upon admission.
+> A pilot project for the NHS AI Lab Skunkworks team, Long Stayer Risk Stratification uses historical data from Gloucestershire Hospitals NHS Foundation Trust to predict how long a patient will stay in hospital upon admission.
 
-As the successful candidate from a Dragons’ Den-style project pitch, Long Stayer Risk Stratification was first picked as a pilot project for the NHSX AI (Artificial Intelligence) Lab Skunkworks team in April 2021.
+As the successful candidate from a Dragons’ Den-style project pitch, Long Stayer Risk Stratification was first picked as a pilot project for the AI (Artificial Intelligence) Skunkworks team in April 2021.
 
 ## Background
 Hospital long stayers, those with a length of stay (LoS) of 21 days or longer, have significantly worse medical and 
@@ -43,9 +43,9 @@ stratified those patients with long and serious hospital stays under the long-st
 | [Production Build Configuration Files](deploy/README.md) | Overview of the configuration files provided for production build Docker containers |
 | [Training](training/README.md) | Description of the training process for the models used in the LTSS API |
 
-## NHSX AI Lab Skunkworks
-The project is supported by the NHSX AI Lab Skunkworks, which exists within the NHS AI Lab to support the health and care community to rapidly progress ideas from the conceptual stage to a proof of concept.
+## NHS AI Lab Skunkworks
+The project is supported by the NHS AI Lab Skunkworks, which exists within the NHS AI Lab to support the health and care community to rapidly progress ideas from the conceptual stage to a proof of concept.
 
-Find out more about the [NHSX AI Lab Skunkworks](https://www.nhsx.nhs.uk/ai-lab/ai-lab-programmes/skunkworks/).
+Find out more about the [NHS AI Lab Skunkworks](https://www.nhsx.nhs.uk/ai-lab/ai-lab-programmes/skunkworks/).
 Join our [Virtual Hub](https://future.nhs.uk/connect.ti/system/text/register) to hear more about future crowdsourcing event opportunities.
 Get in touch with the Skunkworks team at [aiskunkworks@nhsx.nhs.uk](aiskunkworks@nhsx.nhs.uk).
