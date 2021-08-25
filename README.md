@@ -2,9 +2,9 @@
 
 # NHS AI Lab Skunkworks project: Long Stayer Risk Stratification
 
-> A pilot project for the NHS AI Lab Skunkworks team, Long Stayer Risk Stratification uses historical data from Gloucestershire Hospitals NHS Foundation Trust to predict how long a patient will stay in hospital upon admission.
+> A pilot project for the NHS AI (Artificial Intelligence)  Lab Skunkworks team, Long Stayer Risk Stratification uses historical data from Gloucestershire Hospitals NHS Foundation Trust to predict how long a patient will stay in hospital upon admission.
 
-As the successful candidate from a Dragons’ Den-style project pitch, Long Stayer Risk Stratification was first picked as a pilot project for the AI (Artificial Intelligence) Skunkworks team in April 2021.
+As the successful candidate from the AI Skunkworks problem-sourcing programme, Long Stayer Risk Stratification was first picked as a pilot project for the AI Skunkworks team in April 2021.
 
 ## Background
 Hospital long stayers, those with a length of stay (LoS) of 21 days or longer, have significantly worse medical and 
