@@ -42,6 +42,7 @@
     },
     "rules": {
       "operator-linebreak": [2, "after"],
+      "linebreak-style": 0,
       "no-console": "off"
     }
   },
