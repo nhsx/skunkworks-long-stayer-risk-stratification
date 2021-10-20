@@ -80,7 +80,7 @@ optional arguments:
 To replicate the reported results, the model was trained using the following command:
 
 ```bash
-$ python3 train_los.py -d '/path/to/NHSX Polygeist data 1617 to 2021 v2.csv -e 500' --shuffle-data --shuffle-seed 100 --save-frequency 10
+$ python3 train_los.py -d '/path/to/NHSX Polygeist data 1617 to 2021 v2.csv' -e 500 --shuffle-data --shuffle-seed 100 --save-frequency 10
 ```
 
 #### Checking and Validation
@@ -98,7 +98,7 @@ likelihood of a particular LoS, given a particular univariate factor. It combine
 and assumes they have equal weighting; as the number of categories increases, the CDF trends toward the mean CDF.
 
 This then allows a number of days / risk category to be produced based on the CDFs with a given confidence. By fixing
-the confidence vaue, for example at 95%, we can predict with a fixed (e.g., 5%) error what the likely maximum
+the confidence value, for example at 95%, we can predict with a fixed (e.g., 5%) error what the likely maximum
 stay is.
 
 As with the LoS model, there are tunable parameters to the training:
@@ -124,5 +124,5 @@ optional arguments:
 The results in the report can be replicated by training with the following command:
 
 ```bash
-$ python3 train_risk.py -d '/path/to/NHSX Polygeist data 1617 to 2021 v2.csv -e 500' -s risk_model.pkl --shuffle-data --shuffle-seed 100
+$ python3 train_risk.py -d '/path/to/NHSX Polygeist data 1617 to 2021 v2.csv' -e 500 -s risk_model.pkl --shuffle-data --shuffle-seed 100
 ```
