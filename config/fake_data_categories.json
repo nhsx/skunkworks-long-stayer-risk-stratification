@@ -1,0 +1,255 @@
+{
+    "PATIENT_GENDER_CURRENT": [
+        "1",
+        "2",
+        "9"
+    ],
+    "AE_ATTENDANCE_CATEGORY_CODE": [
+        "TEST CATEGORY A",
+        "TEST CATEGORY B"
+    ],
+    "AE_INITIAL_ASSESSMENT_TRIAGE_CATEGORY_CODE": [
+        "TEST CATEGORY A",
+        "TEST CATEGORY B"
+    ],
+    "MAIN_SPECIALTY_CODE_AT_ADMISSION": [
+        "TEST CATEGORY A",
+        "TEST CATEGORY B"
+    ],
+    "SOURCE_OF_ADMISSION_HOSPITAL_PROVIDER_SPELL": [
+        "This is a test description",
+        "Description not found"
+    ],
+    "TREATMENT_FUNCTION_CODE_AT_ADMISSION": [
+        "TREATMENT_FUNCTION_A",
+        "TREATMENT_FUNCTION_B"
+    ],
+    "IS_CARE_HOME_ON_DISCHARGE": [
+        "No",
+        "Yes"
+    ],
+    "IS_CARE_HOME_ON_ADMISSION": [
+        "No",
+        "Yes"
+    ],
+    "IS_CANCER": [
+        "No",
+        "Yes"
+    ],
+    "IS_CHRONIC_KIDNEY_DISEASE": [
+        "No",
+        "Yes"
+    ],
+    "IS_COPD": [
+        "No",
+        "Yes"
+    ],
+    "IS_CORONARY_HEART_DISEASE": [
+        "No",
+        "Yes"
+    ],
+    " IS_DEMENTIA": [
+        "No",
+        "Yes"
+    ],
+    "IS_DIABETES": [
+        "No",
+        "Yes"
+    ],
+    "IS_FRAILTY_PROXY": [
+        "No",
+        "Yes"
+    ],
+    "IS_HYPERTENSION": [
+        "No",
+        "Yes"
+    ],
+    "IS_MAJOR": [
+        "Y",
+        "N"
+    ],
+    "IS_MENTAL_HEALTH": [
+        "N",
+        "Y"
+    ],
+    "ADMISSION_METHOD_HOSPITAL_PROVIDER_SPELL_DESCRIPTION": [
+        "null",
+        "TEST_ADMISSION_METHOD_A",
+        "TEST_ADMISSION_METHOD_B"
+    ],
+    "AE_ARRIVAL_MODE": [
+        "null",
+        "test_mode_A",
+        "test_mode_B"
+    ],
+    "AE_ATTENDANCE_CATEGORY_CODE": [
+        "null",
+        "1",
+        "2",
+        "3"
+    ],
+    "AE_ATTENDANCE_DISPOSAL": [
+        "null",
+        "test mode A",
+        "test mode B"
+    ],
+    "AE_INITIAL_ASSESSMENT_TRIAGE_CATEGORY_CODE": [
+        "null",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+    ],
+    "ATTENDANCE_TYPE": [
+        "null",
+        "e"
+    ],
+    "DIVISION_NAME_AT_ADMISSION": [
+        "test_mode_A",
+        "test_mode_B",
+        "unknown"
+    ],
+    "ELECTIVE_OR_NON_ELECTIVE": [
+        "test A",
+        "tet B",
+        "null"
+    ],
+    "MAIN_SPECIALTY_CODE_AT_ADMISSION": [
+        "null",
+        "313",
+        "331"
+    ],
+    "MANCHESTER_TRIAGE_CATEGORY": [
+        "null",
+        "major",
+        "minor"
+    ],
+    "PATIENT_CLASSIFICATION": [
+        "2",
+        "1",
+        "5",
+        "3"
+    ],
+    "SOURCE_OF_ADMISSION_HOSPITAL_PROVIDER_SPELL": [
+        "19",
+        "79",
+        "null"
+    ],
+    "TREATMENT_FUNCTION_CODE_AT_ADMISSION": [
+        "251",
+        "360",
+        "null"
+    ],
+    "CANCER_TYPE": [
+        "Test Type",
+        "null"
+    ],
+    "DIABETES_TYPE": [
+        "none",
+        "Test type",
+        "null"
+    ],
+    "FRAILTY PROXY": [
+        "other",
+        "null"
+    ],
+    "ILLNESS INJURY FLAG": [
+        "illness",
+        "injury",
+        "null"
+    ],
+    "IS_CANCER": [
+        "0",
+        "1",
+        "null"
+    ],
+    "IS_CHRONIC_KIDNEY_DISEASE": [
+        "0",
+        "1",
+        "null"
+    ],
+    "IS_COPD": [
+        "0",
+        "1",
+        "null"
+    ],
+    "IS_CORONARY_HEART_DISEASE": [
+        "0",
+        "1",
+        "null"
+    ],
+    "IS_DEMENTIA": [
+        "0",
+        "1",
+        "null"
+    ],
+    "IS_PATIENT_DEATH_DURING_SPELL": [
+        "0",
+        "1",
+        "null"
+    ],
+    "IS_DIABETES": [
+        "0",
+        "1",
+        "null"
+    ],
+    "IS_FRAILTY_PROXY": [
+        "0",
+        "1",
+        "null"
+    ],
+    "IS_HYPERTENSION": [
+        "0",
+        "1",
+        "null"
+    ],
+    "IS_MENTAL_HEALTH": [
+        "0",
+        "1",
+        "null"
+    ],
+    "MAJOR_MINOR": [
+        "null",
+        "test_A",
+        "test_B"
+    ],
+    "MENTAL HEALTH FLAG": [
+        "test",
+        "null"
+    ],
+    "PRESENTING COMPLAINT GROUP": [
+        "not categorisable",
+        "null",
+        "test A"
+    ],
+    "SPELLDOMINANTPROCEDURE": [
+        "null",
+        "c867",
+        "c313"
+    ],
+    "STROKE_WARD_STAY": [
+        "null",
+        "y",
+        "n"
+    ],
+    "ARRIVAL_DAY_OF_WEEK": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+    ],
+    "ARRIVAL_MONTH_NAME": [
+        "May",
+        "June",
+        "July"
+    ],
+    "RURAL URBAN CLASSIFICATION": [
+        "testA",
+        "testB"
+    ],
+    "ETHNIC_CATEGORY_CODE_DESCRIPTION": [
+        "null",
+        "not known",
+        "not stated"
+    ]
+}

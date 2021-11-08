@@ -23,6 +23,8 @@ varying severity distributed across the risk categories.
 ## Training the models
 Please note all bash commands listed below assume the working directory is `training` (this directory).
 
+It is also required that in this current version there is a field in the training data called `IS_MAJOR` which contains a number of values of `"Y"` or `"N"`. This is because the current training process filters for ``IS_MAJOR == "Y"`.
+
 ### Install Dependencies
 Ensure training dependencies are installed from both the top-level [`requirements.txt`](../requirements.txt) *and*
 the training-specific [`requirements.txt`](./requirements.txt) in this directory:
@@ -124,5 +126,80 @@ optional arguments:
 The results in the report can be replicated by training with the following command:
 
 ```bash
-$ python3 train_risk.py -d '/path/to/NHSX Polygeist data 1617 to 2021 v2.csv' -e 500 -s risk_model.pkl --shuffle-data --shuffle-seed 100
+$ python3 train_risk.py -d '/path/to/NHSX Polygeist data 1617 to 2021 v2.csv' -s risk_model.pickle --shuffle-data --shuffle-seed 100
 ```
+
+# Training model and creating the files needed to test the repo
+
+Here are the step by step commands to run in bash to generate the fake data and model files needed to test the repo setup. This should be run once all dependencies have been installed. (Please see the `Install Dependencies` section above).
+
+Please note all bash commands listed below assume the starting working directory is `training` (this directory):
+```
+skunkworks-long-stayer-risk-stratification\training
+```
+
+Please see [fake data generation README](../fake_data_generation\README.md#Overview-and-Purpose) to to read the intended purpose and usage of the fake data.
+
+## 1. Generate `fake_training_data.csv`
+This is to generate the fake training data.
+
+Run the following command in the terminal ensuring the terminal is in `training` directory.
+
+  ```bash
+  $ python3 ../fake_data_generation/generate_fake_data.py -nr 200 -fn "fake_training_data" --only_major_cases
+  ```
+  Once successfully run the following message will appear in the terminal:
+
+  ```
+  fake data Generated! File saved: fake_training_data.csv with 200 records created. Seed was set to None.
+  ```
+  You should now see a file called `fake_training_data.csv` in this directory (`training`).
+
+## 2. Generate `fake_example_records.csv`
+This to generate some fake example records.
+
+Run the following command in the terminal ensuring the terminal is in `training` directory.
+
+ ```bash
+  $ python3 ../fake_data_generation/generate_fake_data.py -nr 20 -fn "fake_example_records" --only_major_cases
+```
+
+Once successfully run the following message will appear in the terminal:
+
+```
+fake data Generated! File saved: fake_example_records.csv with 20 records created. Seed was set to None.
+```
+You should now see a file called `fake_example_records.csv` in this directory (`training`).
+
+## 3. Running the LoS Predictor
+This to run the LoS Model
+
+Once the fake data has been generated, run the following command (remaining in the same directory: `training`).
+
+```
+$ python3 train_los.py -d 'fake_training_data.csv' -e 2 --shuffle-data --shuffle-seed 10 --save-frequency 1
+```
+
+Note the data the model with this command is not being trained to optimise performance for prediction. The settings in the command above are so the training is completed faster to generate a file that can be used to test the set up.
+
+## 4. Saving the LoS model as `.state`
+This is to save the trained LoS model.
+
+In the `training` you should now see three files `mod_ep_0`, `mod_ep_1`, `mod_ep_2`. For the purposes of just converting a file to test the set up of the repo, `mod_ep_2` will be renamed to `los_model.state` .
+
+```
+$ mv mod_ep_2 los_model.state
+```
+A file called `los_model.state` should now appear in the `training` directory.
+
+### 5. Running the risk model
+This is to run the risk model.
+
+Run the following command (remaining in the same directory: `training`).
+
+```bash
+$ python3 train_risk.py -d 'fake_training_data.csv' -s risk_model.pickle --shuffle-data --shuffle-seed 100
+```
+A file called `risk_model.pickle` should now appear in the `training` directory.
+
+All the files have now been generated to test the set up. Instructions on deploy can be [found here](../Deploy/README.md).
