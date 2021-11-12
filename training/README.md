@@ -185,7 +185,7 @@ Note the data the model with this command is not being trained to optimise perfo
 ## 4. Saving the LoS model as `.state`
 This is to save the trained LoS model.
 
-In the `training` you should now see three files `mod_ep_0`, `mod_ep_1`, `mod_ep_2`. For the purposes of just converting a file to test the set up of the repo, `mod_ep_2` will be renamed to `los_model.state` .
+In the `training` directory you should now see three files `mod_ep_0`, `mod_ep_1`, `mod_ep_2`. For the purposes of just converting a file to test the set up of the repo, `mod_ep_2` will be renamed to `los_model.state` .
 
 ```
 $ mv mod_ep_2 los_model.state
@@ -202,4 +202,4 @@ $ python3 train_risk.py -d 'fake_training_data.csv' -s risk_model.pickle --shuff
 ```
 A file called `risk_model.pickle` should now appear in the `training` directory.
 
-All the files have now been generated to test the set up. Instructions on deploy can be [found here](../Deploy/README.md).
+You will need to copy these to the config folder before following instructions on how to deploy [found here](../Deploy/README.md).
