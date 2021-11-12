@@ -23,7 +23,7 @@ varying severity distributed across the risk categories.
 ## Training the models
 Please note all bash commands listed below assume the working directory is `training` (this directory).
 
-It is also required that in this current version there is a field in the training data called `IS_MAJOR` which contains a number of values of `"Y"` or `"N"`. This is because the current training process filters for ``IS_MAJOR == "Y"`.
+It is also required that in this current version there is a field in the training data called `IS_MAJOR` which contains a number of values of `"Y"` or `"N"`. This is because the current training process filters for `IS_MAJOR == "Y"`.
 
 ### Install Dependencies
 Ensure training dependencies are installed from both the top-level [`requirements.txt`](../requirements.txt) *and*
@@ -151,7 +151,7 @@ Run the following command in the terminal ensuring the terminal is in `training`
   Once successfully run the following message will appear in the terminal:
 
   ```
-  fake data Generated! File saved: fake_training_data.csv with 200 records created. Seed was set to None.
+  Fake Data Generated! File saved: fake_training_data.csv with 200 records created. Seed was set to None.
   ```
   You should now see a file called `fake_training_data.csv` in this directory (`training`).
 
@@ -167,7 +167,7 @@ Run the following command in the terminal ensuring the terminal is in `training`
 Once successfully run the following message will appear in the terminal:
 
 ```
-fake data Generated! File saved: fake_example_records.csv with 20 records created. Seed was set to None.
+Fake Data Generated! File saved: fake_example_records.csv with 20 records created. Seed was set to None.
 ```
 You should now see a file called `fake_example_records.csv` in this directory (`training`).
 

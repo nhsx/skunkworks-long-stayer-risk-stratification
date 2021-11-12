@@ -180,5 +180,5 @@ df.to_csv(f"{args.filename}.csv", index=False)
 
 # Message to show script has run
 print(
-    f"fake data Generated! File saved: {args.filename}.csv with {args.number_of_records} records created. Seed was set to {args.seed}."
+    f"Fake Data Generated! File saved: {args.filename}.csv with {args.number_of_records} records created. Seed was set to {args.seed}."
 )
