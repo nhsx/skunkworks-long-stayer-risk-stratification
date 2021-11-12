@@ -41,7 +41,7 @@ parser.add_argument(
     default=False,
     action="store_true",
     help=""" [False - no need to specify, True - specify by just including: --only_major_cases]
-    If True all records generated will have major cases listed as 'Y' if False cases will be a mix of 'N' and 'Y'.""",
+    If True all records generated will have major cases listed as "Y" if False cases will be a mix of "N" and "Y".""",
 )
 
 parser.add_argument(

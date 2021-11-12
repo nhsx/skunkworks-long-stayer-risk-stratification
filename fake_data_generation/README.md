@@ -6,7 +6,7 @@ This directory contains a file called `generate_fake_data.py`. The purpose of `g
 - To ensure the files are being generated correctly to test GUI setup.
 - To test the setup and running of the repo
 
-The purpose of the fake data is *NOT* too:
+The following should be noted with regards to artifacts produced by using fake data:
 - *DO NOT* use the model artifacts (`.pickle` and `.state` files) generated from the fake data to make predictions which will be used in any real world application.
 - *DO NOT* use the fake data generated to inform any insights to be applied to a real world setting.
 - *DO NOT* use to test the performance of the model
@@ -40,7 +40,7 @@ optional arguments:
   --filename FILENAME, -fn FILENAME
                         [str] The name of the csv file saved at the end (do not add.csv). The default name is set to "fake_data". This will generate a file called "fake_data.csv" .
   --only_major_cases, -mc
-                        [False - no need to specify, True - specify by just including: --only_major_cases] If True all records generated will have major cases listed as 'Y' if False cases will be a mix of 'N' and 'Y'.
+                        [False - no need to specify, True - specify by just including: --only_major_cases] If True all records generated will have major cases listed as "Y" if False cases will be a mix of "N" and "Y".
   --seed SEED, -s SEED  [int] If specified will ensure result is reproducible. Default is set to None so will generate a different result each time.
   ```
 

@@ -192,7 +192,7 @@ $ mv mod_ep_2 los_model.state
 ```
 A file called `los_model.state` should now appear in the `training` directory.
 
-### 5. Running the risk model
+## 5. Running the risk model
 This is to run the risk model.
 
 Run the following command (remaining in the same directory: `training`).
