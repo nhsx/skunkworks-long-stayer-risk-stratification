@@ -51,7 +51,9 @@ stratified those patients with long and serious hospital stays under the long-st
 | [WebUI Overview](webui/README.md) | Description of UI components and application structure |
 | [Configuration Files](config/README.md) | Overview of provided configuration files |
 | [Production Build Configuration Files](deploy/README.md) | Overview of the configuration files provided for production build Docker containers |
+| [Generating fake data](fake_data_generation/README.md) | Description of how to generate fake data to test the setup and running of the repo |
 | [Training](training/README.md) | Description of the training process for the models used in the LTSS API |
+
 
 ## NHS AI Lab Skunkworks
 The project is supported by the NHS AI Lab Skunkworks, which exists within the NHS AI Lab to support the health and care community to rapidly progress ideas from the conceptual stage to a proof of concept.

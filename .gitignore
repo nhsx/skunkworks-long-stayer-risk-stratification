@@ -1,7 +1,13 @@
+### Ignore these file types
+*.state
+*.pickle
+*.pkl
+
 ### Datasets - prevent accidental commit of data ###
 *.csv
 *.csv#
 *.zip
+*.dcm
 
 ### Torch runs ###
 runs/
