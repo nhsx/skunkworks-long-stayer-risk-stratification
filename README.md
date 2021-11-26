@@ -21,6 +21,7 @@ This proof of concept ([TRL 4](https://en.wikipedia.org/wiki/Technology_readines
 This project was subject to a Data Protection Impact Assessment (DPIA), ensuring the protection of the data used in line with the [UK Data Protection Act 2018](https://www.legislation.gov.uk/ukpga/2018/12/contents/enacted) and [UK GDPR](https://ico.org.uk/for-organisations/dp-at-the-end-of-the-transition-period/data-protection-and-the-eu-in-detail/the-uk-gdpr/). No data or trained models are shared in this repository.
 
 ## Background
+
 Hospital long stayers, those with a length of stay (LoS) of 21 days or longer, have significantly worse medical and 
 social outcomes than other patients.  Long-stayers are often medically optimised (fit for discharge) many days before 
 their actual discharge.  Moreover, there are a complex mixture of medical, cultural and socioeconomic factors which 
@@ -31,9 +32,19 @@ the Home Office’s [Accelerated Capability Environment (ACE)](https://www.gov.u
 firstly, to determine if an experimental artificial intelligence (AI) approach to predicting hospital long-stayers 
 was possible; secondly, if so, to produce a proof-of-concept (PoC) risk stratification tool.
 
-## Stratification Tool
+## Model Architecture
 
-![Banner](docs/ui_example_screen0.png)
+Two models are trained in this project using historical data, with the maximum length of stay prediction from both models selected for each new patient:
+
+![Overview of model architecture](docs/model_architecture.png)
+
+## Deployment Architecture
+
+In addition to the predictive model, a web-based stratification tool is provided to visualise the prediction in the context of the patient's data:
+
+![Overview of deployment architecture](docs/deployment_architecture.png)
+
+### Stratification Tool
 
 The tool displays the LTSS for a patient record, between Level 1 and 5; with 5 being the most severe risk of the patient 
 becoming a long stayer.  The tool allows exploration of various factors, and enables the user to edit those entries to produce
