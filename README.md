@@ -1,4 +1,6 @@
 [![status: experimental](https://github.com/GIScience/badges/raw/master/status/experimental.svg)](https://github.com/GIScience/badges#experimental)
+[![MIT License](https://img.shields.io/badge/License-MIT-lightgray.svg)](LICENSE)
+![Python Version](https://img.shields.io/badge/Python-3.8-blue.svg)
 
 ![Banner](docs/banner.png)
 
@@ -8,7 +10,7 @@
 
 As the successful candidate from the AI Skunkworks problem-sourcing programme, Long Stayer Risk Stratification was first picked as a pilot project for the AI Skunkworks team in April 2021.
 
-## Intended Purpose
+## Intended Use
 
 This proof of concept ([TRL 4](https://en.wikipedia.org/wiki/Technology_readiness_level)) is intended to demonstrate the technical validity of applying a convolutional neural network to patient records in order to predict length of stay. It is not intended for deployment in a clinical or non-clinical setting without further development and compliance with the [UK Medical Device Regulations 2002](https://www.legislation.gov.uk/uksi/2002/618/contents/made) where the product qualifies as a medical device.
 
