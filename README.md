@@ -17,6 +17,7 @@ This proof of concept ([TRL 4](https://en.wikipedia.org/wiki/Technology_readines
 This project was subject to a Data Protection Impact Assessment (DPIA), ensuring the protection of the data used in line with the [UK Data Protection Act 2018](https://www.legislation.gov.uk/ukpga/2018/12/contents/enacted) and [UK GDPR](https://ico.org.uk/for-organisations/dp-at-the-end-of-the-transition-period/data-protection-and-the-eu-in-detail/the-uk-gdpr/). No data or trained models are shared in this repository.
 
 ## Background
+
 Hospital long stayers, those with a length of stay (LoS) of 21 days or longer, have significantly worse medical and 
 social outcomes than other patients.  Long-stayers are often medically optimised (fit for discharge) many days before 
 their actual discharge.  Moreover, there are a complex mixture of medical, cultural and socioeconomic factors which 
@@ -40,8 +41,10 @@ cases, with less than 1% of long-stayers being classified as very low risk.  Mor
 classified as Risk Category 4 and 5, with proportions steadily increasing through the categories. Risk Category 5 also 
 stratified those patients with long and serious hospital stays under the long-stay threshold (serious and lengthy stays).
 
-
 ## Documentation:
+
+> The full technical report (PDF) is available to members of the NHS. [Email your request to ai-skunkworks@nhsx.nhs.uk](mailto:ai-skunkworks@nhsx.nhs.uk?subject=Request%20for%20NHS_AI_Lab_Skunkworks_Long_Stayer_Risk_Stratification_Technical_Report.pdf)
+
 
 | Docs | Description |
 | ---- | ----------- |
@@ -56,6 +59,7 @@ stratified those patients with long and serious hospital stays under the long-st
 
 
 ## NHS AI Lab Skunkworks
+
 The project is supported by the NHS AI Lab Skunkworks, which exists within the NHS AI Lab to support the health and care community to rapidly progress ideas from the conceptual stage to a proof of concept.
 
 Find out more about the [NHS AI Lab Skunkworks](https://www.nhsx.nhs.uk/ai-lab/ai-lab-programmes/skunkworks/).
