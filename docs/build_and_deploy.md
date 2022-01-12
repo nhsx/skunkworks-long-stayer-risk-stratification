@@ -21,6 +21,10 @@ For this mechanism to function correctly, the example data should be saved to a 
 which in turn should be placed in the `records` directory. Failure to include the required record data in `records/example_records.csv` 
 will prevent the data loading code, and in turn the record API endpoints, from operating.
 
+To generate fake data with the necessary columns and fake rows, please see the documentation for the [fake data generator](../fake_data_generation/README.md).
+
+To train the models using real or fake data, please see the documentation for [training](../training/README.md).
+
 ## Recommended: Containerised Build 
 
 Deployment of a production build of the API service and WebUI is achieved with Docker containers. 
