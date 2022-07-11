@@ -1,4 +1,6 @@
 [![status: experimental](https://github.com/GIScience/badges/raw/master/status/experimental.svg)](https://github.com/GIScience/badges#experimental)
+[![MIT License](https://img.shields.io/badge/License-MIT-lightgray.svg)](LICENSE)
+![Python Version](https://img.shields.io/badge/Python-3.8-blue.svg)
 
 ![Banner](docs/banner.png)
 
@@ -8,7 +10,9 @@
 
 As the successful candidate from the AI Skunkworks problem-sourcing programme, Long Stayer Risk Stratification was first picked as a pilot project for the AI Skunkworks team in April 2021.
 
-## Intended Purpose
+![Screenshot of demonstrator tool](docs/ui_example_screen0.png)
+
+## Intended Use
 
 This proof of concept ([TRL 4](https://en.wikipedia.org/wiki/Technology_readiness_level)) is intended to demonstrate the technical validity of applying a convolutional neural network to patient records in order to predict length of stay. It is not intended for deployment in a clinical or non-clinical setting without further development and compliance with the [UK Medical Device Regulations 2002](https://www.legislation.gov.uk/uksi/2002/618/contents/made) where the product qualifies as a medical device.
 
@@ -28,9 +32,19 @@ the Home Office’s [Accelerated Capability Environment (ACE)](https://www.gov.u
 firstly, to determine if an experimental artificial intelligence (AI) approach to predicting hospital long-stayers 
 was possible; secondly, if so, to produce a proof-of-concept (PoC) risk stratification tool.
 
-## Stratification Tool
+## Model Architecture
 
-![Banner](docs/ui_example_screen0.png)
+Two models are trained in this project using historical data, with the maximum length of stay prediction from both models selected for each new patient:
+
+![Overview of model architecture](docs/model_architecture.png)
+
+## Deployment Architecture
+
+In addition to the predictive model, a web-based stratification tool is provided to visualise the prediction in the context of the patient's data:
+
+![Overview of deployment architecture](docs/deployment_architecture.png)
+
+### Stratification Tool
 
 The tool displays the LTSS for a patient record, between Level 1 and 5; with 5 being the most severe risk of the patient 
 becoming a long stayer.  The tool allows exploration of various factors, and enables the user to edit those entries to produce
